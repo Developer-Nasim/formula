@@ -16,11 +16,7 @@
   font-family: Georgia-Bold;
 }
 
-
-
-
-
-
+ 
 body {
   font-family: Helvetica-Regular;
   font-weight: 400;
@@ -136,16 +132,22 @@ li {
 /* default-css END 
 ================================== */
  
-.itmg1 .it1{display: block;}
-.it1{display: none;}
-.it2{display: none;}
-.it3{display: none;}
-
+.itmg1 .it1{
+  opacity: 1;}
+.theImgs img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .3s;
+}
 .itmg2 img.it2 {
-  display: block;
+  opacity: 1;
 }
 .itmg3 img.it3 {
-  display: block;
+  opacity: 1;
 }
 .btn-close:after{
     content: "+";
@@ -480,8 +482,17 @@ span.work_tl{
   font-size: 20px;
   margin-top: 25px;
 }
-.bonus {
+.theImgs {
+  display: block;
+  width: 90%;
+  height: 450px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 30px;
 }
+
+
+
 .bonus_blk h2 {font-size: 40px;color: #C632A2;margin-bottom: 30px;}
 .bonus_blk p {font-size: 20px;font-family: 'Georgia-Bold';margin: 35px 0 32px;line-height: 27px;height: 92px;}
 .bonus_blk span {font-size: 20px;text-align: left;display: block;margin-left: 45px;color: black;line-height: 30px;margin-bottom: 15px;position: relative;}
