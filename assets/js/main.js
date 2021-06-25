@@ -83,7 +83,21 @@
   });
 
 
-
+  $(".item_price1").click(function(){
+    $(this).addClass("active");
+    $(".item_price2").removeClass("active");
+    $(".item_price3").removeClass("active");
+});
+$(".item_price2").click(function(){
+    $(this).addClass("active");
+    $(".item_price1").removeClass("active");
+    $(".item_price3").removeClass("active");
+});
+$(".item_price3").click(function(){
+    $(this).addClass("active");
+    $(".item_price1").removeClass("active");
+    $(".item_price2").removeClass("active");
+});
 
  
 })(jQuery);
