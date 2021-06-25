@@ -40,7 +40,10 @@ section.Review {
     .title h2 {
         font-size: 30px;
     }
-    
+    .item_left img {
+        width: 400px;
+        height: 400px;
+    }
     img.vdo_img {
         width: 100%;
     }
@@ -219,9 +222,11 @@ section.Review {
     width: 90%;
 }
 .bonus_blk{
+    margin: auto;
     margin-bottom: 30px;
     padding: 21px 5px 20px;
     height: max-content;
+    max-width: 360px;
 }
 .owl-nav{
     width: 108%;
@@ -232,7 +237,8 @@ section.Review {
     width: 100%;
 }
 .item_left img {
-    max-width: 230px;
+    max-width: 250px;
+    max-height: 250px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -468,7 +474,7 @@ a.item_vtn {
  
 /* Large Mobile screen :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:420px}
+.container {width:450px}
 .item_check_warp p{
     font-size: 16px;
     margin: 5px 0 !important;

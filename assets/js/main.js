@@ -83,20 +83,41 @@
   });
 
 
-  $(".item_price1").click(function(){
+$(".item_price1").click(function(){
     $(this).addClass("active");
+    $(".item_left").addClass("itmg1");
+    $(".item_left").removeClass("itmg2");
+    $(".item_left").removeClass("itmg3");
     $(".item_price2").removeClass("active");
     $(".item_price3").removeClass("active");
+    
+    $(".vtn1").addClass("show_vtn");
+    $(".vtn2").removeClass("show_vtn");
+    $(".vtn3").removeClass("show_vtn");
+
 });
 $(".item_price2").click(function(){
     $(this).addClass("active");
+    $(".item_left").addClass("itmg2");
+    $(".item_left").removeClass("itmg1");
+    $(".item_left").removeClass("itmg3");
     $(".item_price1").removeClass("active");
     $(".item_price3").removeClass("active");
+    $(".item_price3").removeClass("active");
+    $(".vtn2").addClass("show_vtn");
+    $(".vtn1").removeClass("show_vtn");
+    $(".vtn3").removeClass("show_vtn");
 });
 $(".item_price3").click(function(){
     $(this).addClass("active");
+    $(".item_left").addClass("itmg3");
+    $(".item_left").removeClass("itmg2");
+    $(".item_left").removeClass("itmg1");
     $(".item_price1").removeClass("active");
     $(".item_price2").removeClass("active");
+    $(".vtn3").addClass("show_vtn");
+    $(".vtn1").removeClass("show_vtn");
+    $(".vtn2").removeClass("show_vtn");
 });
 
  

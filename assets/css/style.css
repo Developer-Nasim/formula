@@ -136,6 +136,40 @@ li {
 /* default-css END 
 ================================== */
  
+.itmg1 .it1{display: block;}
+.it1{display: none;}
+.it2{display: none;}
+.it3{display: none;}
+
+.itmg2 img.it2 {
+  display: block;
+}
+.itmg3 img.it3 {
+  display: block;
+}
+.btn-close:after{
+    content: "+";
+    position: absolute;
+    font-size: 64px;
+    font-family: 'Georgia-Regular';
+    color: #fff;
+    transform: rotate(47deg);
+    right: 0;
+    top: 20px;
+}
+.vtn1{display: none !important;}
+.vtn2{display: none !important;}
+.vtn3{display: none !important;}
+
+a.show_vtn.vtn1{
+  display: block !important;
+}
+a.show_vtn.vtn2{
+  display: block !important;
+}
+a.show_vtn.vtn3{
+  display: block !important;
+}
 
 
 .header-area {
@@ -280,7 +314,7 @@ li {
 .item_price.active {color: #ffff;background: #C632A2;}
 .item {
 }
-.item_left img {margin-bottom: 60px;}
+.item_left img {margin: auto;margin-bottom: 60px;width: 490px;height: 450px;}
 .item_price.active i{
     opacity: 1;
 }
